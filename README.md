@@ -133,8 +133,6 @@ search/
 |---|---|---|---|
 | `nfcorpus` | `kaengreg/rus-nfcorpus` | 3 630 | ~323 |
 | `scifact` | `kaengreg/rus-scifact` | 1 109 | ~300 |
-| `ruSciBench` | `kaengreg/ruSciBench-retrieval` | 201 тыс. | 1 577 |
-| `miracl` | `kaengreg/rus-miracl` | 9.54 млн | 1 252 |
 
 ### Этапы пайплайна
 
