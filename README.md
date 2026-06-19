@@ -16,6 +16,7 @@
 |---|---|
 | [`webapp/`](#webapp--веб-приложение) | Веб-приложение: дашборд, семантический поиск, LLM-агенты |
 | [`search/`](#search--пайплайн-расширения-запросов) | Пайплайн сравнения методов расширения запросов (QE) |
+| [`topics_full_extract/`](#topics_full_extract--тематический-анализ) | Тематический анализ и классификация статей CyberLeninka по OECD-темам |
 | [`dataset/`](#dataset--датасет-cyberleninka) | Датасет CyberLeninka — 80 статей, 208 запросов, BEIR-формат |
 
 ---
@@ -167,6 +168,28 @@ QE_LLM=Qwen/Qwen2.5-3B-Instruct python search/pipeline/00_build.py --stages 6
 
 ---
 
+## topics_full_extract/ — Тематический анализ
+
+Результаты тематического анализа и классификации статей CyberLeninka по OECD-темам.
+В модуле собраны предсказания разных подходов и сводный отчёт сравнения методов.
+
+```
+topics_full_extract/
+└── topics_full/
+    └── cyberleninka_topics/
+        ├── artifacts/
+        │   └── predictions/   # предсказания моделей тематической классификации
+        └── reports/           # comparison.csv и comparison.md
+```
+
+Сравниваемые подходы: Labeled LDA, NMF + CatBoost, Supervised BERTopic + CatBoost,
+RAG + LLM, LLM-rerank и Smart merge. Лучший результат в отчёте — Smart merge
+с **F1-macro = 0,6890**.
+
+Подробнее: [`topics_full_extract/topics_full/cyberleninka_topics/reports/comparison.md`](topics_full_extract/topics_full/cyberleninka_topics/reports/comparison.md)
+
+---
+
 ## dataset/ — Датасет CyberLeninka
 
 ```
@@ -226,6 +249,8 @@ cp .env.example .env
 │   ├── pipeline/      # Скрипты пайплайна QE
 │   ├── notebooks/     # Ноутбуки экспериментов
 │   └── results/       # CSV с результатами
+├── topics_full_extract/
+│   └── topics_full/    # Тематический анализ CyberLeninka по OECD-темам
 ├── dataset/
 │   ├── beir/          # BEIR-датасет
 │   ├── pdfs/          # Исходные PDF
