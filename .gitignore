@@ -1,0 +1,146 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+*.pyd
+.Python
+*.egg
+*.egg-info/
+dist/
+build/
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Jupyter Notebooks
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# ML / Data
+checkpoints/
+runs/
+logs/
+mlruns/
+wandb/
+outputs/
+
+# Large datasets / archives
+*.parquet
+*.feather
+*.npy
+*.npz
+*.zip
+*.tar
+*.tar.gz
+*.tar.bz2
+*.7z
+*.rar
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.claude/
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Secrets / environment
+.env
+.env.*
+*.env
+!.env.example
+!.env.template
+
+# Pytest
+.pytest_cache/
+.coverage
+htmlcov/
+
+# mypy / ruff
+.mypy_cache/
+.ruff_cache/
+
+# Empty directory placeholders
+!.gitkeep
+
+# ── Search pipeline cache (auto-generated, can be multi-GB) ──────────────────
+qe_cache/
+qe_cache_rerank_nfcorpus/
+qe_cache*/
+
+# OCR intermediate output (compiled into dataset/beir/corpus.jsonl)
+dataset/ocr_out/
+ocr_out/
+
+# ── Webapp ────────────────────────────────────────────────────────────────────
+webapp.db
+webapp.db-journal
+webapp_cache/
+web/node_modules/
+web/dist/
+
+# Большие эмбеддинги (>100 МБ, превышают лимит GitHub)
+bertrend_emb_extracted/
+
+# ── Topic modeling outputs (вне области репозитория) ─────────────────────────
+bertrend/
+lda/
+topics_full/
+topic_clf/
+cyberleninka_topics/
+
+# ── Thesis text drafts ────────────────────────────────────────────────────────
+text/
+chapter*.txt
+diplom_text*.txt
+check_*.txt
+*.docx
+
+# ── One-off utility scripts ───────────────────────────────────────────────────
+_apply_labels.py
+_build_chapter3_docx.py
+_build_notebook.py
+_build_notebook_field.py
+_build_ocr_notebook.py
+_check_nb.py
+_check_sizes.py
+_dump_hierarchy.py
+_extract_concepts.py
+_extract_nb.py
+_inspect_queries.py
+_inspect_singleton_concepts.py
+_make_bertrend_xlsx.py
+_make_heads_xlsx.py
+_pdf_diagnostic.py
+_pdf_diagnostic.json
+_pdf_diagnostic_extra.py
+_test_phase0.py
+
+# ── Root-level dirs (topic modeling / OpenAlex data, not part of this repo) ──
+/config/
+/data/
+/models/
+/notebooks/
+/results/
+/topic_clf/
+
+# Planning docs and scratch files
+IMPROVEMENT_PLAN.md
+WEBAPP_PLAN.md
+bertrend_modeling.xlsx
+datasets_head.xlsx
+extracted_text/
+nb_cells/
+
+# Scattered root notebooks/files
+/*.ipynb
+_*.txt

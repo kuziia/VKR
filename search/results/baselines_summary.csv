@@ -1,0 +1,11 @@
+dataset,method,NDCG@10,NDCG@100,Recall@10,Recall@100,MRR
+rus-scifact,bm25,0.6604,0.6882,0.7798,0.9049,0.6316
+rus-scifact,me5-large,0.6343,0.6623,0.7627,0.889,0.6078
+rus-scifact,giga-embeddings,0.7339,0.7524,0.8649,0.95,0.7025
+rus-scifact,rrf(me5+bm25),0.6802,0.7059,0.8244,0.9382,0.6469
+rus-scifact,rrf(giga+bm25),0.7328,0.7538,0.8636,0.955,0.7007
+rus-nfcorpus,bm25,0.3033,0.2615,0.1551,0.2446,0.4911
+rus-nfcorpus,me5-large,0.305,0.2764,0.1517,0.2809,0.5023
+rus-nfcorpus,giga-embeddings,0.3654,0.3325,0.1763,0.3333,0.565
+rus-nfcorpus,rrf(me5+bm25),0.33,0.2939,0.1638,0.2869,0.5378
+rus-nfcorpus,rrf(giga+bm25),0.3562,0.325,0.1749,0.3215,0.5665

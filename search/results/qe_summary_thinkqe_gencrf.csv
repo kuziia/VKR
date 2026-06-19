@@ -1,0 +1,13 @@
+dataset,retriever,qe,NDCG@10,NDCG@100,Recall@10,Recall@100,MAP@10,MAP@100
+rus-nfcorpus,bm25,gencrf,0.3184,0.2901,0.1516,0.2987,0.1192,0.1479
+rus-nfcorpus,bm25,thinkqe,0.3357,0.3137,0.1705,0.3352,0.1264,0.1629
+rus-nfcorpus,giga,gencrf,0.3217,0.302,0.1486,0.321,0.1109,0.1466
+rus-nfcorpus,giga,thinkqe,0.3382,0.3107,0.1576,0.3219,0.118,0.1539
+rus-nfcorpus,rrf,gencrf,0.3667,0.3402,0.1769,0.3499,0.1368,0.1759
+rus-nfcorpus,rrf,thinkqe,0.3825,0.3544,0.1891,0.3641,0.1457,0.1886
+rus-scifact,bm25,gencrf,0.6619,0.6924,0.8073,0.942,0.6112,0.6185
+rus-scifact,bm25,thinkqe,0.6482,0.6729,0.8385,0.9433,0.5835,0.5902
+rus-scifact,giga,gencrf,0.7254,0.7474,0.8444,0.9447,0.6815,0.6864
+rus-scifact,giga,thinkqe,0.6424,0.6671,0.7553,0.8668,0.5993,0.6054
+rus-scifact,rrf,gencrf,0.7314,0.757,0.8557,0.9667,0.6864,0.6926
+rus-scifact,rrf,thinkqe,0.7301,0.7554,0.8675,0.9827,0.6819,0.6875

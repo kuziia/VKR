@@ -1,0 +1,46 @@
+# ── Webapp backend (webapp/) ──────────────────────────────────────────────────
+fastapi==0.115.5
+uvicorn[standard]==0.32.1
+httpx==0.28.1
+pydantic==2.10.3
+pydantic-settings==2.7.0
+python-dotenv==1.0.1
+SQLAlchemy==2.0.36
+aiosqlite==0.20.0
+tenacity==9.0.0
+# claude-agent-sdk   # раскомментируй для LLM-агентов
+# PyMuPDF            # раскомментируй для PDF-резюме
+
+# ── Search pipeline (search/) ─────────────────────────────────────────────────
+numpy
+pandas
+scipy
+scikit-learn
+torch
+transformers
+datasets
+accelerate
+sentence-transformers
+faiss-cpu
+bm25s
+rank-bm25
+
+# NLP — русский язык
+pymorphy3
+natasha
+razdel
+
+# LLM (локальный инференс для Stage 06-07)
+vllm
+
+# LLM API клиенты
+openai
+anthropic
+
+# Визуализация и утилиты
+matplotlib
+seaborn
+tqdm
+jupyter
+notebook
+ipykernel

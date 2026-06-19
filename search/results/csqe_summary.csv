@@ -1,0 +1,3 @@
+dataset,retriever,qe,NDCG@10,NDCG@100,Recall@10,Recall@100,MAP@10,MAP@100
+rus-nfcorpus,rrf,query2doc_csqe,0.3941,0.3614,0.1935,0.3649,0.1525,0.1933
+rus-scifact,rrf,query2doc_csqe,0.7645,0.7855,0.8747,0.97,0.724,0.7286

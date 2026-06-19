@@ -1,0 +1,9 @@
+dataset,retrieval,rerank,NDCG@5,NDCG@10,Recall@5,Recall@10,MAP@5,MAP@10
+rus-nfcorpus,q2d,bge,0.3832,0.3536,0.1367,0.1772,0.1153,0.1343
+rus-nfcorpus,q2d,none,0.4055,0.3691,0.1415,0.1807,0.1235,0.1424
+rus-nfcorpus,q2d_csqe,bge,0.3898,0.3628,0.1382,0.1826,0.1158,0.1364
+rus-nfcorpus,q2d_csqe,none,0.4322,0.3941,0.1565,0.1935,0.1324,0.1525
+rus-scifact,q2d,bge,0.7107,0.7372,0.7828,0.858,0.6817,0.6946
+rus-scifact,q2d,none,0.721,0.7437,0.8071,0.8708,0.6852,0.697
+rus-scifact,q2d_csqe,bge,0.7132,0.7409,0.7845,0.8636,0.6844,0.6975
+rus-scifact,q2d_csqe,none,0.7494,0.7645,0.8309,0.8747,0.716,0.724
